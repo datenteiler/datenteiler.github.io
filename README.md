@@ -1,4 +1,4 @@
-# Wie erstellt man eine Github-Seite #
+# Wie erstellt man eine Github-Seite (_Github Pages_) #
 
 Auf Github ein neues öffentliches Repo anlegen:
 
