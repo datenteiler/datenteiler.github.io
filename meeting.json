@@ -1,6 +1,6 @@
 {
-	"Datum": "16.06.2017", 
-	"Uhrzeit": "18:30", 
-	"Raum": "Netzweise",
-    "Ort": "Hannover"
+	"date"  : "16.06.2017", 
+	"time"  : "18:30", 
+	"room"  : "Netzweise",
+    "place" : "Hannover"
 }

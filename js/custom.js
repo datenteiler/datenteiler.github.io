@@ -22,8 +22,9 @@ function copyright() {
 	document.addEventListener("DOMContentLoaded", function () {
 		copyright();
 		loadJSON(function(response) {
-			var Treffen = JSON.parse(response);
-			document.getElementById("meeting").innerHTML = 'Das nächste Treffen findet am ' + Treffen.Datum; // + ' um ' + text.Uhrzeit + ' in den Räumen von ' + text.Raum + ' in ' + text.Ort + ' statt.';
+			var meeting = JSON.parse(response);
+			document.getElementById("meeting").innerHTML = 'Das nächste Treffen findet am ' + meeting.date + 
+			' um ' + meeting.time + ' in den Räumen von ' + meeting.room + ' in ' + meeting.place + ' statt.';
 		});
 	});
 }());
