@@ -23,8 +23,8 @@ function copyright() {
 		copyright();
 		loadJSON(function(response) {
 			var meeting = JSON.parse(response);
-			document.getElementById("meeting").innerHTML = 'Das nächste Treffen findet am ' + meeting.date + 
-			' um ' + meeting.time + ' in den Räumen von ' + meeting.room + ' in ' + meeting.place + ' statt.';
+			document.getElementById("meeting").innerHTML = 'Das <strong>nächste Treffen findet am ' + meeting.date + 
+			' um ' + meeting.time + ' in den Räumen von ' + meeting.room + '</strong> in ' + meeting.place + ' statt.';
 		});
 	});
 }());
