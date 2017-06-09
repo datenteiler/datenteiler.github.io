@@ -2,10 +2,5 @@
 	"date"  : "16.06.2017", 
 	"time"  : "18:30", 
 	"room"  : "Netzweise",
-<<<<<<< HEAD
-        "place" : "Hannover"
-}
-=======
 	"place" : "Hannover"
 }
->>>>>>> changes in json
