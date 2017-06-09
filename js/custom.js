@@ -22,9 +22,10 @@ function copyright() {
 	document.addEventListener("DOMContentLoaded", function () {
 		copyright();
 		loadJSON(function(response) {
-			var meeting = JSON.parse(response);
-			document.getElementById("meeting").innerHTML = 'Das <strong>nächste Treffen findet am ' + meeting.date + 
-			' um ' + meeting.time + ' in den Räumen von ' + meeting.room + '</strong> in ' + meeting.place + ' statt.';
+			var data = JSON.parse(response);
+			document.getElementById("meeting").innerHTML = 'Das <strong>nächste Treffen findet am ' + data.meeting.date + 
+			' um ' + data.meeting.time + ' in den Räumen von ' + data.meeting.room + '</strong> in ' + data.meeting.place + ' statt.';
+			document.getElementById("topics").innerHTML = data.topics.first;
 		});
 	});
 }());

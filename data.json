@@ -1,0 +1,13 @@
+{
+	"meeting" : {
+			"date"  : "16.06.2017", 
+			"time"  : "18:30", 
+			"room"  : "Netzweise",
+			"place" : "Hannover"
+	},
+	"topics" : {
+			"first"  : "Vortrag 1 wird von Kamil über types.ps1xml und ggf. Format.ps1xml gehalten.",
+			"second" : "Vortrag 2 von Christian ist die Vorstellung der neuen Homepage.",
+			"third"  : "Außerdem haben wir wieder die Rubrik 'Bring your Script'."
+	}
+}
