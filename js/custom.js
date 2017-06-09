@@ -25,9 +25,9 @@ function copyright() {
 			var data = JSON.parse(response);
 			document.getElementById("meeting").innerHTML = 'Das <strong>nächste Treffen findet am ' + data.meeting.date + 
 			' um ' + data.meeting.time + ' in den Räumen von ' + data.meeting.room + '</strong> in ' + data.meeting.place + ' statt.';
-			document.getElementById("topics").innerHTML = '<p><strong>Vortrag 1:</strong> ' + data.topics.first + '</p>' +
-			'<p><strong>Vortrag 2:</strong> ' + data.topics.second + '</p>' +
-			'<p><strong>Außerdem:</strong> ' + data.topics.third + '</p>';
+			document.getElementById("topics").innerHTML = '<ul><li><strong>Vortrag 1:</strong> ' + data.topics.first + '</li>' +
+			'<li><strong>Vortrag 2:</strong> ' + data.topics.second + '</li>' +
+			'<li><strong>Außerdem:</strong> ' + data.topics.third + '</li>';
 		});
 	});
 }());
