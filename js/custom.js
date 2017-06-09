@@ -27,7 +27,7 @@ function copyright() {
 			' um ' + data.meeting.time + ' in den Räumen von ' + data.meeting.room + '</strong> in ' + data.meeting.place + ' statt.';
 			document.getElementById("topics").innerHTML = '<ul><li><strong>Vortrag 1:</strong> ' + data.topics.first + '</li>' +
 			'<li><strong>Vortrag 2:</strong> ' + data.topics.second + '</li>' +
-			'<li><strong>Außerdem:</strong> ' + data.topics.third + '</li>';
+			'<li><strong>Außerdem:</strong> ' + data.topics.third + '</li></ul>';
 		});
 	});
 }());
