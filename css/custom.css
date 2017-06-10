@@ -1,0 +1,17 @@
+#meetingbox {
+    background-color: LightSteelBlue ;
+    border: 1px solid black;
+ 
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+#topicbox {
+    background-color: MistyRose  ;
+    border: 1px solid black;
+ 
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
