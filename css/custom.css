@@ -1,6 +1,6 @@
 #meetingbox {
     margin-right: 5px;
-    background-color: LightSteelBlue;
+    /* background-color: LightSteelBlue; */
     border: 1px dotted black;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -10,7 +10,7 @@
 #topicbox {
     margin-left: 5px;
     background-color: MistyRose;
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
