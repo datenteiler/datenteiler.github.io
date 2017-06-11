@@ -30,7 +30,7 @@ function copyright() {
 			var mapsStreet = data.meeting.street.replace(" ","+");
 			var mapsPlace  = data.meeting.place.replace(" ","+");
 			var mapsUrl = 'http://maps.google.com/maps?f=q&source=s_q&hl=de&geocode=&q=' +
-			          mapsStreet + ',+' + mapsPlace + ',+Bundesrepublik+Deutschland';
+			          mapsStreet + ',+' + mapsPlace;
 			document.getElementById("route").innerHTML = '<a class="btn btn-default" href=' + mapsUrl + ' role="button" target="_blank">Route planen &raquo;</a>';
 
 			document.getElementById("topics").innerHTML = '<strong>Vortrag 1:</strong> ' + data.topics.first + '<br />' +
