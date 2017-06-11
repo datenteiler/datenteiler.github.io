@@ -27,9 +27,11 @@ function copyright() {
 			' um ' + data.meeting.time + ' in den Räumen von ' + data.meeting.room + '</strong> ' + data.meeting.street + 
 			', ' + data.meeting.place + ' statt.';
 
-			var url = 'http://maps.google.com/maps?f=q&source=s_q&hl=de&geocode=&q=' +
-			          data.meeting.street + ',+' + data.meeting.place + ',+Bundesrepublik+Deutschland';
-			document.getElementById("route").innerHTML = '<a class="btn btn-default" href=' + url + ' role="button">Route planen &raquo;</a>';
+			var mapsStreet = data.meeting.street.replace(" ","+");
+			var mapsPlace  = data.meeting.place.replace(" ","+");
+			var mapsUrl = 'http://maps.google.com/maps?f=q&source=s_q&hl=de&geocode=&q=' +
+			          mapsStreet + ',+' + mapsPlace + ',+Bundesrepublik+Deutschland';
+			document.getElementById("route").innerHTML = '<a class="btn btn-default" href=' + mapsUrl + ' role="button" target="_blank">Route planen &raquo;</a>';
 
 			document.getElementById("topics").innerHTML = '<strong>Vortrag 1:</strong> ' + data.topics.first + '<br />' +
 			'<strong>Vortrag 2:</strong> ' + data.topics.second + '<br />' +
