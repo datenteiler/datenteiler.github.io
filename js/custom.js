@@ -24,7 +24,7 @@ function copyright() {
 		loadJSON(function(response) {
 			var data = JSON.parse(response);
 			document.getElementById("meeting").innerHTML = 'Das <strong>nächste Treffen findet am ' + data.meeting.date + 
-			' um ' + data.meeting.time + ' in den Räumen von ' + data.meeting.room + '</strong> ' + data.meeting.street + 
+			' um ' + data.meeting.time + ' in den Räumen von ' + data.meeting.room + ',</strong> ' + data.meeting.street + 
 			', ' + data.meeting.place + ' statt.';
 
 			var mapsStreet = data.meeting.street.replace(" ","+");
