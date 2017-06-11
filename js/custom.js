@@ -29,7 +29,7 @@ function copyright() {
 
 			var url = 'http://maps.google.com/maps?f=q&source=s_q&hl=de&geocode=&q=' +
 			          data.meeting.street + ',+' + data.meeting.place + ',+Bundesrepublik+Deutschland';
-			document.getElementById("route").innerHTML = '<a class="btn btn-default" href=url role="button">Route planen &raquo;</a>';
+			document.getElementById("route").innerHTML = '<a class="btn btn-default" href=' + url + ' role="button">Route planen &raquo;</a>';
 
 			document.getElementById("topics").innerHTML = '<strong>Vortrag 1:</strong> ' + data.topics.first + '<br />' +
 			'<strong>Vortrag 2:</strong> ' + data.topics.second + '<br />' +
