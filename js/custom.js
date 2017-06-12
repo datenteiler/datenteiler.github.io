@@ -38,7 +38,7 @@ function copyright() {
 			'<strong>Außerdem:</strong> ' + data.Themen.Drittens;
 
 			var currentLocation = window.location;
-			document.getElementById("Terminal").innerHTML = '<code>(curl "' + currentLocation + '/data.json" | ConvertFrom-Json).Treffen<code>';
+			document.getElementById("Terminal").innerHTML = '<code>(curl "' + currentLocation + 'data.json" | ConvertFrom-Json).Treffen<code>';
 		});
 	});
 }());
