@@ -36,6 +36,9 @@ function copyright() {
 			document.getElementById("Themen").innerHTML = '<strong>Vortrag 1:</strong> ' + data.Themen.Erstens + '<br />' +
 			'<strong>Vortrag 2:</strong> ' + data.Themen.Zweitens + '<br />' +
 			'<strong>Außerdem:</strong> ' + data.Themen.Drittens;
+
+			var currentLocation = window.location;
+			document.getElementById("Terminal").innerHTML = '<code>(curl "' + currentLocation + '/data.json" | ConvertFrom-Json).Treffen<code>'
 		});
 	});
 }());
