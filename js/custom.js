@@ -23,19 +23,19 @@ function copyright() {
 		copyright();
 		loadJSON(function(response) {
 			var data = JSON.parse(response);
-			document.getElementById("meeting").innerHTML = 'Das <strong>nächste Treffen findet am ' + data.meeting.date + 
-			' um ' + data.meeting.time + ' in den Räumen von ' + data.meeting.room + ',</strong> ' + data.meeting.street + 
-			', ' + data.meeting.place + ' statt.';
+			document.getElementById("Treffen").innerHTML = 'Das <strong>nächste Treffen findet am ' + data.Treffen.Datum + 
+			' um ' + data.Treffen.Zeit + ' in den Räumen von ' + data.Treffen.Ort + ',</strong> ' + data.Treffen.Strasse + 
+			', ' + data.Treffen.Stadt + ' statt.';
 
-			var mapsStreet = data.meeting.street.replace(" ","+");
-			var mapsPlace  = data.meeting.place.replace(" ","+");
+			var mapsStreet = data.Treffen.Strasse.replace(" ","+");
+			var mapsPlace  = data.Treffen.Stadt.replace(" ","+");
 			var mapsUrl = 'http://maps.google.com/maps?f=q&source=s_q&hl=de&geocode=&q=' +
 			          mapsStreet + ',+' + mapsPlace;
-			document.getElementById("route").innerHTML = '<a class="btn btn-default" href=' + mapsUrl + ' role="button" target="_blank">Route planen &raquo;</a>';
+			document.getElementById("Route").innerHTML = '<a class="btn btn-default" href=' + mapsUrl + ' role="button" target="_blank">Route planen &raquo;</a>';
 
-			document.getElementById("topics").innerHTML = '<strong>Vortrag 1:</strong> ' + data.topics.first + '<br />' +
-			'<strong>Vortrag 2:</strong> ' + data.topics.second + '<br />' +
-			'<strong>Außerdem:</strong> ' + data.topics.third;
+			document.getElementById("Themen").innerHTML = '<strong>Vortrag 1:</strong> ' + data.Themen.Erstens + '<br />' +
+			'<strong>Vortrag 2:</strong> ' + data.Themen.Zweitens + '<br />' +
+			'<strong>Außerdem:</strong> ' + data.Themen.Drittens;
 		});
 	});
 }());
