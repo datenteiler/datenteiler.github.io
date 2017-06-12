@@ -1,5 +1,4 @@
 #meetingbox {
-    margin: 1px;
     background-color: LightBlue;
     border: 1px solid #fff;
     -moz-border-radius: 5px;
@@ -8,7 +7,6 @@
 }
 
 #topicbox {
-    margin: 1px;
     background-color: MistyRose;
     bborder: 1px solid #fff;
     -moz-border-radius: 5px;
@@ -17,7 +15,6 @@
 }
 
 #terminalbox {
-    margin: 1px;
     background-color: WhiteSmoke;
     border: 1px solid #fff;
     -moz-border-radius: 5px;
