@@ -39,7 +39,7 @@ function copyright() {
 
 			var currentLocation = window.location;
 			document.getElementById("Terminal").innerHTML = 'Du kannst dir unseren nächsten Termin auch in der PowerShell anschauen' + 
-			' und weitere Skripte findest du auf unserer Github-Seite:' +
+			' und weitere Skripte findest du auf unserer Github-Seite:<br />' +
 			'<code>(curl "' + currentLocation + 'data.json" | ConvertFrom-Json).Treffen</code>';
 		});
 	});
