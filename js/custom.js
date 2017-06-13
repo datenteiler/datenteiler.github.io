@@ -33,9 +33,9 @@ function copyright() {
 			          mapsStreet + ',+' + mapsPlace;
 			document.getElementById("Route").innerHTML = '<a class="btn btn-default" href=' + mapsUrl + ' role="button" target="_blank">Route planen &raquo;</a>';
 
-			document.getElementById("Themen").innerHTML = '<p><strong>Vortrag 1:</strong> ' + data.Thema.Vortrag[0] + '</p>' +
-			'<p><strong>Vortrag 2:</strong> ' + data.Thema.Vortrag[1] + '</p>' +
-			'<p><strong>Außerdem:</strong> ' + data.Thema.Vortrag[2] + '</p>';
+			document.getElementById("Themen").innerHTML = '<p><strong>Vortrag 1:</strong> ' + data.Thema[0].Vortrag[0] + '</p>' +
+			'<p><strong>Vortrag 2:</strong> ' + data.Thema[0].Vortrag[1] + '</p>' +
+			'<p><strong>Außerdem:</strong> ' + data.Thema[0].Vortrag[2] + '</p>';
 
 			var currentLocation = window.location;
 			document.getElementById("Terminal").innerHTML = '<p>Du kannst dir unseren nächsten Termin auch in der PowerShell anschauen: </p>' + 
