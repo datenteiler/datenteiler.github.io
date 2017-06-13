@@ -37,7 +37,7 @@ function copyright() {
 			for ( var i = 0; i < data.Thema.length; i++ ) {
     			var obj = data.Thema[i];
     			// console.log(obj.Id);
-				themen += '<p>' + obj.Id + '. ' + obj.Vortrag + '</p>';
+				themen += '<p><b>' + obj.Id + '.</b> ' + obj.Vortrag + '</p>';
 			}
 			document.getElementById("Themen").innerHTML = themen;
 
