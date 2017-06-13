@@ -1,5 +1,5 @@
 { 
-  "Treffen": "PSUGH",
+  "Treffen": "PowerShell Usergroup Hannover (PSUGH)",
   "Datum"  : "16.06.2017", 
   "Zeit"   : "18:30", 
   "Ort"    : "Netzweise",
@@ -16,7 +16,7 @@
     },
     {
 		"Id"	  : 3,
-      	"Vortrag" : "'Bring your Script'"
+      	"Vortrag" : "Bring your Script"
     }
   ]   
 }
