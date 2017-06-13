@@ -33,6 +33,11 @@ function copyright() {
 			          mapsStreet + ',+' + mapsPlace;
 			document.getElementById("Route").innerHTML = '<a class="btn btn-default" href=' + mapsUrl + ' role="button" target="_blank">Route planen &raquo;</a>';
 
+			for(var i = 0; i < data.Thema.length; i++) {
+    			var obj = data.Thema[i];
+    			console.log(obj.Id);
+			}
+
 			document.getElementById("Themen").innerHTML = '<p><strong>Vortrag 1:</strong> ' + data.Thema[0].Vortrag + '</p>' +
 			'<p><strong>Vortrag 2:</strong> ' + data.Thema[1].Vortrag + '</p>' +
 			'<p><strong>Außerdem:</strong> ' + data.Thema[2].Vortrag + '</p>';
