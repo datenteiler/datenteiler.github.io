@@ -1,14 +1,19 @@
-{
-	"Treffen" : {
-			"Datum"  : "16.06.2017", 
-			"Zeit"   : "18:30", 
-			"Ort"    : "Netzweise",
-			"Strasse": "Freundallee 13A",
-			"Stadt"  : "30173 Hannover"
-	},
-	"Themen" : {
-			"Erstens"  : "Kamil mit 'About types.ps1xml und ggf. Format.ps1xml'",
-			"Zweitens" : "Christian mit 'Vorstellung der neuen Homepage'",
-			"Drittens" : "'Bring your Script'"
-	}
+{ 
+  "Treffen": "PSUGH",
+  "Datum"  : "16.06.2017", 
+  "Zeit"   : "18:30", 
+  "Ort"    : "Netzweise",
+  "Strasse": "Freundallee 13A",
+  "Stadt"  : "30173 Hannover",
+  "Thema"  : [
+    {
+      "Vortrag" : "Kurzer Objekt-Refresher und Einstieg in dynamische Parameter mit Tobias."
+    },
+    {
+      "Vortrag" : "Christian stellt die neue Homepage vor."
+    },
+    {
+      "Vortrag" : "'Bring your Script'"
+    }
+  ]   
 }

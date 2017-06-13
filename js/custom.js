@@ -23,19 +23,19 @@ function copyright() {
 		copyright();
 		loadJSON(function(response) {
 			var data = JSON.parse(response);
-			document.getElementById("Treffen").innerHTML = '<p>Das <strong>nächste Treffen findet am ' + data.Treffen.Datum + 
-			' um ' + data.Treffen.Zeit + ' in den Räumen von ' + data.Treffen.Ort + ',</strong> ' + data.Treffen.Strasse + 
-			', ' + data.Treffen.Stadt + ' statt.</p>';
+			document.getElementById("Treffen").innerHTML = '<p>Das <strong>nächste Treffen findet am ' + data.Datum + 
+			' um ' + data.Zeit + ' in den Räumen von ' + data.Ort + ',</strong> ' + data.Strasse + 
+			', ' + data.Stadt + ' statt.</p>';
 
-			var mapsStreet = data.Treffen.Strasse.replace(" ","+");
-			var mapsPlace  = data.Treffen.Stadt.replace(" ","+");
+			var mapsStreet = data.Strasse.replace(" ","+");
+			var mapsPlace  = data.Stadt.replace(" ","+");
 			var mapsUrl = 'http://maps.google.com/maps?f=q&source=s_q&hl=de&geocode=&q=' +
 			          mapsStreet + ',+' + mapsPlace;
 			document.getElementById("Route").innerHTML = '<a class="btn btn-default" href=' + mapsUrl + ' role="button" target="_blank">Route planen &raquo;</a>';
 
-			document.getElementById("Themen").innerHTML = '<p><strong>Vortrag 1:</strong> ' + data.Themen.Erstens + '</p>' +
-			'<p><strong>Vortrag 2:</strong> ' + data.Themen.Zweitens + '</p>' +
-			'<p><strong>Außerdem:</strong> ' + data.Themen.Drittens + '</p>';
+			document.getElementById("Themen").innerHTML = '<p><strong>Vortrag 1:</strong> ' + data.Thema.Vortrag[0] + '</p>' +
+			'<p><strong>Vortrag 2:</strong> ' + data.Thema.Vortrag[1] + '</p>' +
+			'<p><strong>Außerdem:</strong> ' + data.Thema.Vortrag[2] + '</p>';
 
 			var currentLocation = window.location;
 			document.getElementById("Terminal").innerHTML = '<p>Du kannst dir unseren nächsten Termin auch in der PowerShell anschauen: </p>' + 
