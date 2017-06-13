@@ -21,3 +21,10 @@
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
+
+#pscode {
+    border: 1px dashed grey;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
