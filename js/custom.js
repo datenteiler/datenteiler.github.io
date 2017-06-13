@@ -43,7 +43,7 @@ function copyright() {
 
 			var currentLocation = window.location;
 			document.getElementById("Terminal").innerHTML = '<p>Du kannst dir unseren nächsten Termin auch in der PowerShell anschauen: </p>' + 
-			'<p id="pscode"><code>(curl "' + currentLocation + 'data.json" | ConvertFrom-Json).Treffen</code></p>' +
+			'<p id="pscode"><code>curl "' + currentLocation + 'data.json" | ConvertFrom-Json</code></p>' +
 			'<p>Weitere Skripte findest du auf unserer Github-Seite.</p>';
 		});
 	});
