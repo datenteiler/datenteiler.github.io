@@ -23,9 +23,9 @@ function copyright() {
 		copyright();
 		loadJSON(function(response) {
 			var data = JSON.parse(response);
-			document.getElementById("Treffen").innerHTML = 'Das <strong>nächste Treffen findet am ' + data.Treffen.Datum + 
+			document.getElementById("Treffen").innerHTML = '<p>Das <strong>nächste Treffen findet am ' + data.Treffen.Datum + 
 			' um ' + data.Treffen.Zeit + ' in den Räumen von ' + data.Treffen.Ort + ',</strong> ' + data.Treffen.Strasse + 
-			', ' + data.Treffen.Stadt + ' statt.';
+			', ' + data.Treffen.Stadt + ' statt.</p>';
 
 			var mapsStreet = data.Treffen.Strasse.replace(" ","+");
 			var mapsPlace  = data.Treffen.Stadt.replace(" ","+");
@@ -33,13 +33,13 @@ function copyright() {
 			          mapsStreet + ',+' + mapsPlace;
 			document.getElementById("Route").innerHTML = '<a class="btn btn-default" href=' + mapsUrl + ' role="button" target="_blank">Route planen &raquo;</a>';
 
-			document.getElementById("Themen").innerHTML = '<strong>Vortrag 1:</strong> ' + data.Themen.Erstens + '<br />' +
-			'<strong>Vortrag 2:</strong> ' + data.Themen.Zweitens + '<br />' +
-			'<strong>Außerdem:</strong> ' + data.Themen.Drittens;
+			document.getElementById("Themen").innerHTML = '<p><strong>Vortrag 1:</strong> ' + data.Themen.Erstens + '</p>' +
+			'<p><strong>Vortrag 2:</strong> ' + data.Themen.Zweitens + '</p>' +
+			'<p><strong>Außerdem:</strong> ' + data.Themen.Drittens + '</p>';
 
 			var currentLocation = window.location;
-			document.getElementById("Terminal").innerHTML = 'Du kannst dir unseren nächsten Termin auch in der PowerShell anschauen' + 
-			' und weitere Skripte findest du auf unserer Github-Seite:<br />' +
+			document.getElementById("Terminal").innerHTML = '<p>Du kannst dir unseren nächsten Termin auch in der PowerShell anschauen.' + 
+			' Dieses und weitere Skripte findest du auf unserer Github-Seite:</p>' +
 			'<code>(curl "' + currentLocation + 'data.json" | ConvertFrom-Json).Treffen</code>';
 		});
 	});
